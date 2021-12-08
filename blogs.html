@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="icon" type="image/png" href="assets/favicon.png" />
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/loader.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Rajat | Projects</title>
+        <script src="js/script.js" async></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </head>
+    <body>
+        <div id="page-container">
+            <header class="nav-bar">
+                <a href="#" class="my_logo left"><h2>RAJAT</h2></a>
+                <ul class="nav_links" id="nav_links">
+                    <li>
+                        <a href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="skills.html">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">BLOGS</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">CONTACT ME</a>
+                    </li>
+                </ul>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </header>
+        </div>
+
+        <section class="section" id="projects-section">
+            <div class="projects-section-wrapper">
+                <div class="projects-text-div"></div>
+                <div class="div-wrapper projects-wrapper">
+                    <ul class="cards">
+                        <li class="cards-item">
+                            <div class="card" data-aos="fade-up">
+                                <div class="card-image">
+                                    <img
+                                        src="/assets/ecom-filters.png"
+                                        alt="ecom-image"
+                                        class="project-image"
+                                    />
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="card-title">
+                                        10 Best Entensions for Web developers
+                                    </h2>
+                                    <p class="card-text">Demo Blog 1</p>
+                                    <a href="#" class="hosted-links"
+                                        >11th October</a
+                                    >
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cards-item">
+                            <div class="card" data-aos="fade-up">
+                                <div class="card-image">
+                                    <img
+                                        src="/assets/socialize.png"
+                                        alt="socialize-image"
+                                        class="project-image"
+                                    />
+                                </div>
+                                <div class="card-content">
+                                    <h2 class="card-title">
+                                        Understanding React Context API
+                                    </h2>
+                                    <p class="card-text">Demo Blog 2</p>
+                                    <a href="#" class="hosted-links"
+                                        >10th December</a
+                                    >
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div id="go-to-top-button-container">
+            <span>
+                <a href="#"><i class="fa fa-angle-up"></i></a>
+            </span>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-wrapper">
+                designed with &nbsp;<span id="heart-symbol">&hearts;</span>
+                &nbsp; by &nbsp;
+                <a href="https://github.com/imrajat7" target="__blank">rjt</a>
+            </div>
+        </footer>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script type="text/javascript">
+            AOS.init();
+
+            $(window).on("load", function () {
+                $(".loader-wrapper").fadeOut("slow");
+            });
+
+            let toggler = document.getElementById("check");
+            let navBar = document.getElementById("nav_links");
+            let skillsSectionWrapper = document.getElementById(
+                "skills-section-wrapper"
+            );
+            toggler.addEventListener("click", () => {
+                if (toggler.checked) {
+                    navBar.style.left = "0%";
+                } else {
+                    navBar.style.left = "-100%";
+                }
+            });
+            navBar.addEventListener("click", () => {
+                if (toggler.checked) {
+                    navBar.style.left = "-100%";
+                    toggler.checked = false;
+                }
+            });
+        </script>
+    </body>
+</html>

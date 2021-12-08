@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="icon" type="image/png" href="assets/favicon.png" />
+        <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/loader.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Rajat | Skills</title>
+        <script src="js/script.js" async></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    </head>
+    <body>
+        <div id="page-container">
+            <header class="nav-bar">
+                <a href="#" class="my_logo left"><h2>RAJAT</h2></a>
+                <ul class="nav_links" id="nav_links">
+                    <li>
+                        <a href="/">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">SKILLS</a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="/blogs.html">BLOGS</a>
+                    </li>
+                    <li>
+                        <a href="/contact.html">CONTACT ME</a>
+                    </li>
+                </ul>
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </header>
+        </div>
+
+        <section class="section" id="skills-section">
+            <div id="second-section-wrapper">
+                <div
+                    class="div-wrapper skills-text-wrapper"
+                    data-aos="flip-left"
+                >
+                    <h1 id="skills-text">Skills</h1>
+                </div>
+                <div
+                    class="skills-section-wrapper"
+                    id="skills-section-wrapper"
+                    data-aos="zoom-in"
+                >
+                    <div class="skills-section-div">
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/c++-100.png" />
+                        </div>
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/html-5-100.png" />
+                        </div>
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/css3-100.png" />
+                        </div>
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/javascript-100.png" />
+                        </div>
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/react-100.png" />
+                        </div>
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/nodejs-100.png" />
+                        </div>
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/mongodb-100.png" />
+                        </div>
+                        <div class="skill-outer-div">
+                            <img src="/assets/Favorites/android-100.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-wrapper">
+                designed with &nbsp;<span id="heart-symbol">&hearts;</span>
+                &nbsp; by &nbsp;
+                <a href="https://github.com/imrajat7" target="__blank">rjt</a>
+            </div>
+        </footer>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        <script type="text/javascript">
+            AOS.init();
+
+            $(window).on("load", function () {
+                $(".loader-wrapper").fadeOut("slow");
+            });
+
+            let toggler = document.getElementById("check");
+            let navBar = document.getElementById("nav_links");
+            let skillsSectionWrapper = document.getElementById(
+                "skills-section-wrapper"
+            );
+            toggler.addEventListener("click", () => {
+                if (toggler.checked) {
+                    navBar.style.left = "0%";
+                } else {
+                    navBar.style.left = "-100%";
+                }
+            });
+            navBar.addEventListener("click", () => {
+                if (toggler.checked) {
+                    navBar.style.left = "-100%";
+                    toggler.checked = false;
+                }
+            });
+        </script>
+    </body>
+</html>
