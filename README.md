@@ -2,4 +2,4 @@
 
 My basic portfolio consisting of projects,blogs and contact me section. This project is a part of markFour.
 
-hosted [here](https://festive-hugle-3cf036.netlify.app/)
+hosted [here](https://basic-portfolio-123.netlify.app/)
